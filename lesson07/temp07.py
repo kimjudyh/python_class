@@ -1,10 +1,27 @@
 # temp07
 
-l_list = [ [ 1, 2, 3 ] 
-          ,[ 2, 4, 6 ] 
-          ,[ 3, 5, 7 ] 
-         ];
-i = int(input("Enter the first number of a list to add: "));
-add_list = [ i, i*10, i-10 ];   # Add a list with [the entered number, number times 10, number - 10]
-l_list.append(add_list);
-print(l_list);
+inventory = ["revive",
+             "potion",
+             "potion",
+             "pokeball"];
+print(inventory);
+
+item = ["banana"];
+inventory += item;
+print(inventory);
+
+del inventory[1];
+print(inventory);
+
+inventory.append("great ball");
+print(inventory)
+
+for i in range(0,5,1):
+    inventory.append("potion")
+
+print(inventory)
+
+inventory.sort()
+print(inventory)
+
+print(inventory.count("potion"))
