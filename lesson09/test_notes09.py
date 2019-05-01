@@ -12,3 +12,5 @@ def test_hooty_square():
 def test_hooty_add():
     assert hooty_add(5) == 370
 
+def test_hooty_baa():
+    assert hooty_baa() == "baa"
